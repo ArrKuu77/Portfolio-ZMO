@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { PiStarFourFill } from "react-icons/pi";
 import { PiDownloadSimpleBold } from "react-icons/pi";
 import frontendImg from "../image/frontend.jpg";
@@ -7,6 +7,25 @@ import computerBassic from "../image/computerBassic.png";
 
 const AboutComponents = () => {
   const cvPDF = "./CV(zmo)1.pdf";
+  const [birthday, setBirthday] = useState({ year: 1996, months: 0, day: 9 });
+  const { year, months, day } = birthday;
+  const [age, setAge] = useState();
+  const calculateDaysUntilBirthday = (year, months, day) => {
+    const today = new Date();
+    const birthDate = new Date(year, months, day);
+    birthDate.setFullYear(today.getFullYear());
+
+    if (birthDate.getTime() < today.getTime()) {
+      return today.getFullYear() - year;
+    } else {
+      return today.getFullYear() - 1 - year;
+    }
+  };
+
+  useEffect(() => {
+    const days = calculateDaysUntilBirthday(year, months, day);
+    setAge(days);
+  }, []);
 
   return (
     <div
@@ -34,8 +53,11 @@ const AboutComponents = () => {
               data-aos="zoom-in-down"
               className=" md:h-full max-sm:h-[30%] max-sm:w-full rounded-3xl flex flex-col justify-center items-center w-4/12 border border-zinc-700  "
             >
-              <h1 className=" md:text-7xl">28</h1>
-              <h2 className=" md:text-xl">Date of birth (9.1.1996)</h2>
+              <h1 className=" md:text-7xl">{age}</h1>
+              <h2 className=" md:text-xl">
+                Date of birth {birthday.day},{birthday.months + 1},
+                {birthday.year}
+              </h2>
             </div>
             <div
               data-aos-offset="300"
