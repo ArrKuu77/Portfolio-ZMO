@@ -29,7 +29,7 @@ const AboutComponents = () => {
 
   return (
     <div
-      className=" z-10 max-sm:h-[20%]  md:h-[18%]    "
+      className=" z-10 max-sm:h-[12%]  md:h-[18%]    "
       data-aos="fade-down"
       data-aos-delay="500"
       data-aos-duration="1500"
@@ -45,7 +45,7 @@ const AboutComponents = () => {
           {/* <h1>Turning complex problems into simple design</h1> */}
           <h1>Personal Information</h1>
         </div>
-        <div className="  max-sm:h-[22%]  md:h-[13%] max-sm:w-full max-sm:overflow-hidden">
+        <div className="  max-sm:h-[35%]  md:h-[13%] max-sm:w-full max-sm:overflow-hidden">
           <div className="max-sm:flex-col flex justify-between items-center gap-8 h-full">
             <div
               data-aos-offset="300"
@@ -79,7 +79,7 @@ const AboutComponents = () => {
             </div>
           </div>
         </div>
-        <div className=" flex justify-between max-sm:flex-col max-sm:h-[27%]">
+        <div className=" flex justify-between max-sm:flex-col max-sm:h-[38%]">
           <div className=" max-sm:w-full md:w-[60%]   md:text-2xl">
             <div className="">
               <p>
@@ -90,14 +90,14 @@ const AboutComponents = () => {
                 of interactions with doctor .
               </p>
             </div>
-            <div>
+            {/* <div>
               <p>
                 I am seeking a suitable position that enables me to utilize and
                 fortify the attributes, skills and personal qualities. I have
                 always been anenergetic worker and I enjoy overcoming
                 challenges.
               </p>
-            </div>
+            </div> */}
           </div>
           <a
             className="z-20 cursor-pointer select-none"
@@ -144,9 +144,9 @@ const AboutComponents = () => {
           </div>
         </a>
 
-        <div className="  h-[40%] max-sm:h-[20%] max-sm:w-full max-sm:overflow-hidden">
-          <div className=" max-sm:h-full flex max-sm:flex-col justify-center max-sm:w-full">
-            <div
+        {/* <div className="  h-[40%] max-sm:h-[20%] max-sm:w-full max-sm:overflow-hidden"> */}
+        {/* <div className=" max-sm:h-full flex max-sm:flex-col justify-center max-sm:w-full"> */}
+        {/* <div
               data-aos="flip-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -172,8 +172,8 @@ const AboutComponents = () => {
               <div className=" h-[50%] overflow-hidden ">
                 <img src={computerBassic} alt="" />
               </div>
-            </div>
-            {/* <div
+            </div> */}
+        {/* <div
               data-aos="flip-left"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -200,8 +200,8 @@ const AboutComponents = () => {
                 <img src={microsoft} alt="" />
               </div>
             </div> */}
-          </div>
-        </div>
+        {/* </div> */}
+        {/* </div> */}
       </div>
     </div>
   );

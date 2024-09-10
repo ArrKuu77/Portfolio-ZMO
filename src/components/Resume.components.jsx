@@ -15,15 +15,15 @@ import { PiStarFourFill } from "react-icons/pi";
 const ResumeComponents = () => {
   return (
     <div
-      className=" z-10 md:h-[10%] max-sm:h-[13%]  "
+      className=" z-10 md:h-[7%] max-sm:h-[6%]  "
       data-aos="fade-up"
       data-aos-delay="500"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
       id="resume"
     >
-      <div className=" flex flex-col justify-between gap-3 h-full">
-        <div className=" h-[20%] flex justify-evenly flex-col">
+      <div className=" flex flex-col justify-evenly gap-3 h-full">
+        <div className=" h-[30%] flex justify-evenly flex-col">
           <div className=" max-sm:w-1/2 border border-zinc-700 w-1/6 flex items-center justify-evenly p-2 rounded-2xl">
             <PiStarFourFill />
             <p>Resume</p>
@@ -43,7 +43,7 @@ const ResumeComponents = () => {
         </div>
         {/* education */}
         <div
-          className=" md:h-[35%] max-sm:h-[38%] flex flex-col justify-evenly"
+          className=" md:h-[35%] max-sm:h-[40%] flex flex-col justify-evenly"
           data-aos="zoom-in-up"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
@@ -51,7 +51,7 @@ const ResumeComponents = () => {
           <h1 className=" md:text-5xl max-sm:text-2xl">My education</h1>
           <div className=" w-full h-[84%]">
             <div className="w-full h-full max-sm:flex max-sm:flex-col max-sm:justify-between">
-              <div className="max-sm:h-[50%] flex max-sm:flex-col justify-between md:items-center border-y border-gray-600 py-5 ">
+              <div className="max-sm:h-full flex max-sm:flex-col justify-between md:items-center border-y border-gray-600 py-5 ">
                 <div className=" md:w-[20%]">
                   <p className="  text-gray-500 md:text-lg">2012</p>
                 </div>
@@ -64,7 +64,7 @@ const ResumeComponents = () => {
                 </div>
               </div>
 
-              <div className="max-sm:h-[50%] flex max-sm:flex-col justify-between md:items-center border-y border-gray-600 py-5 ">
+              {/* <div className="max-sm:h-[50%] flex max-sm:flex-col justify-between md:items-center border-y border-gray-600 py-5 ">
                 <div className=" md:w-[20%]">
                   <p className="  text-gray-500 md:text-lg">2021</p>
                 </div>
@@ -78,7 +78,7 @@ const ResumeComponents = () => {
                     PowerPoint
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -149,14 +149,14 @@ const ResumeComponents = () => {
           </div>
         </div> */}
         {/* My favourite tools */}
-        <div
+        {/* <div
           className=" h-[30%]"
           data-aos="zoom-in"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
-        >
-          <div className="h-full max-sm:flex max-sm:flex-col justify-evenly">
-            <h1 className=" md:text-5xl max-sm:text-2xl">My favourite tools</h1>
+        > */}
+        {/* <div className="h-full max-sm:flex max-sm:flex-col justify-evenly"> */}
+        {/* <h1 className=" md:text-5xl max-sm:text-2xl">My favourite tools</h1>
             <div className=" max-sm:w-[90%] max-sm:mx-auto   h-[85%] max-sm:flex max-sm:justify-center max-sm:items-center">
               <div className="md:flex md:flex-wrap  md:gap-[5%] md:items-center h-full md:h-full max-sm:flex max-sm:flex-wrap max-sm:items-center max-sm: justify-between">
                 <div className=" max-sm:w-[40%] max-sm:h-[40%] h-[40%] border border-zinc-600  rounded-xl flex flex-col justify-evenly items-center w-[20%] ">
@@ -184,8 +184,8 @@ const ResumeComponents = () => {
                     <SiMicrosoftpowerpoint className=" text-[100%] h-full w-full  text-orange-700" />
                   </div>
                   <p className=" md:text-xl">Power Ponit</p>
-                </div>
-                {/* <div className="max-sm:w-[40%] max-sm:h-[22%] h-[40%] border border-zinc-600  rounded-xl flex flex-col justify-evenly items-center w-[20%]">
+                </div> */}
+        {/* <div className="max-sm:w-[40%] max-sm:h-[22%] h-[40%] border border-zinc-600  rounded-xl flex flex-col justify-evenly items-center w-[20%]">
                   <div className="h-[50%]">
                     <FaHtml5 className=" text-[100%] h-full w-full  text-orange-700" />
                   </div>
@@ -219,10 +219,10 @@ const ResumeComponents = () => {
                   />
                   <p className=" md:text-xl ">Redux Toolkit</p>
                 </div> */}
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* </div>
+            </div> */}
+        {/* </div> */}
+        {/* </div> */}
       </div>
     </div>
   );
